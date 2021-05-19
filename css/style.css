@@ -7,6 +7,17 @@ h1 {
   text-align: center;
 }
 
+button {
+  font-size: 14px;
+  padding: 5px 10px;
+  
+}
+
+input {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
 .display {
   display: flex;
   justify-content: center;
@@ -17,6 +28,12 @@ h1 {
 .column {
   width: 18%;
   padding: 25px 0px;
+}
+
+.form {
+  width: 75%;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
 }
 
 .images img {
@@ -52,6 +69,11 @@ h1 {
   height: 100px;
   font-weight: bold;
   margin: 20px;
+  color: lightgreen;
+}
+
+.links a:hover{
+  text-decoration: ;
 }
 
 .deletes button{
@@ -62,18 +84,6 @@ h1 {
   margin-bottom: 80px;
 }
 
-.form {
-  width: 75%;
-  margin: 0 auto 20px auto;
-  font-size: 18px;
-}
-
-input {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
-button {
-  font-size: 14px;
-  padding: 5px 10px;
+.buttons button{
+  margin-left: 150px;
 }

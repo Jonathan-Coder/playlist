@@ -82,6 +82,7 @@ function displaySongInfo() {
   
   if(info === "[]" || info === null){
     d(".total").innerHTML = "<p>Total Songs: 0</p>";
+    clearInpt();
   }
   
   var parsed = JSON.parse(info);
@@ -102,6 +103,7 @@ function displaySongInfo() {
     d(".links").innerHTML += `<a href="${song[b].link}" target="_blank">Listen Now</a>`;
     d(".deletes").innerHTML += `<button class="btn btn-danger" onclick="del(${b})">Delete</button>`;
   }
+  clearInpt();
   /*
   song.forEach((val, idx) => {
     d(".images").innerHTML += `<img src=${song[idx].imgs}>`;
@@ -166,7 +168,6 @@ function addSongInfo() {
     
     localStorage.setItem(ls, string);
     displaySongInfo();
-    clearInpt();
   } else {
     alert("Please fill in all the boxes.");
     clearInpt();
